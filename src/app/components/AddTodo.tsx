@@ -47,12 +47,12 @@ export default function AddTodo() {
         startTransition(() => {
             if (pathname === "/add") {
                 router.push('/')
-            } else {
-                // Refresh the current route and fetch new data 
-                // from the server without losing 
-                // client-side browser or React state.
-                router.refresh()
             }
+
+            // Refresh the current route and fetch new data 
+            // from the server without losing 
+            // client-side browser or React state.
+            router.refresh()
         })
     }
 
